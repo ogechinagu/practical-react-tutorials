@@ -18,11 +18,26 @@ export const RQSuperHeroesPage = () => {
     return <h1>{`ooops... can't fetch data`}</h1>;
   }
   return (
-    <>
-      <h2>RQ Super Heroes Page</h2>
-      {data?.data.map((hero) => (
-        <div key={hero.id}>{hero.name}</div>
-      ))}
-    </>
+    <div className='rqoutlet'>
+      <h2>Using RQ to get Super Heroes data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Alter Ego</th>
+          </tr>
+        </thead>
+        <thead>
+          {data?.data.map((hero) => (
+            <tr key={hero.id}>
+              <td>{hero.id}</td>
+              <td>{hero.name}</td>
+              <td>{hero.alterEgo}</td>
+            </tr>
+          ))}
+        </thead>
+      </table>
+    </div>
   );
 };

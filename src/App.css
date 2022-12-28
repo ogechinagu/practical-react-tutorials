@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* NAV STYLES */
 nav ul {
   display: flex;
@@ -15,6 +21,65 @@ nav ul li {
 a {
   text-decoration: none;
   color: gray;
+}
+
+/* RQ STYLES */
+.rqpages {
+  width: 100vw;
+  display: flex;
+}
+
+.rqmain {
+  width: 40vw;
+  padding: 30px;
+}
+
+.rqoutlet {
+  width: 60vw;
+  padding: 30px;
+}
+
+.rqhr {
+  border-left: 2px solid #ddd;
+  margin: 20px 0px;
+}
+
+h2,
+p {
+  font-size: 32px;
+  margin: 0px 0px 20px;
+}
+
+.rqbuttons {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th, tr:nth-child(even) {
+  background-color: #dddddd89;
+}
+
+@media only screen and (max-width: 600px) {
+  .rqpages {
+    flex-direction: column;
+  }
+
+  .rqmain,
+  .rqoutlet {
+    width: 100vw;
+  }
 }
 
 /* FORM STYLES */
@@ -66,6 +131,7 @@ button {
   border-color: transparent;
   color: #fff;
   padding: 20px 80px;
+  margin: 10px 0;
   cursor: pointer;
   width: auto;
 }

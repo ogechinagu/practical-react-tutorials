@@ -10,10 +10,7 @@ export const Nav = () => {
             </li>
 
             <li>
-              <Link to='/super-heroes'>Traditional Super Heroes</Link>
-            </li>
-            <li>
-              <Link to='/rq-super-heroes'>RQ Super Heroes</Link>
+              <Link to='/react-query'>React Query</Link>
             </li>
             <li>
               <Link to='/form-login'>Login</Link>

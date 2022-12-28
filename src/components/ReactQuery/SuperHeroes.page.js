@@ -28,11 +28,27 @@ export const SuperHeroesPage = () => {
   }
 
   return (
-    <>
-      <h2>Super Heroes Page</h2>
-      {data.map((hero) => {
-        return <div key={hero.id}>{hero.name}</div>;
-      })}
-    </>
+    <div className='rqoutlet'>
+      <h2>Using normal fetch method to get Super Heroes data</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Alter Ego</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((hero) => (
+            <tr key={hero.id}>
+              <td>{hero.id}</td>
+              <td>{hero.name}</td>
+              <td>{hero.alterEgo}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };

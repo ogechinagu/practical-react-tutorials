@@ -1,3 +1,4 @@
+/* NAV STYLES */
 nav ul {
   display: flex;
   background-color: blanchedalmond;
@@ -14,4 +15,66 @@ nav ul li {
 a {
   text-decoration: none;
   color: gray;
+}
+
+/* FORM STYLES */
+.login {
+  width: 600px;
+  margin: 30px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+
+form {
+  background: #ebebeb42;
+  padding: 30px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  margin: 30px auto;
+  outline: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.login input[type='text'],
+.login input[type='email'],
+.login input[type='password'] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type='text']:focus,
+.login input[type='email']:focus,
+.login input[type='password']:focus {
+  border-color: #888;
+}
+
+button {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  padding: 20px 80px;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+button:focus {
+  border-color: #05a;
 }

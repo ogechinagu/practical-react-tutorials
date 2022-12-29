@@ -13,7 +13,7 @@ export const Nav = () => {
               <Link to='/react-query'>React Query</Link>
             </li>
             <li>
-              <Link to='/form-login'>Login</Link>
+              <Link to='/formik'>Formik</Link>
             </li>
           </ul>
         </nav>

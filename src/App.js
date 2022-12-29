@@ -12,11 +12,11 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path='/react-query' element={<ReactQuery />} >
+        <Route path='/react-query' element={<ReactQuery />}>
           <Route path='superheroes' element={<SuperHeroesPage />} />
           <Route path='rqsuperheroes' element={<RQSuperHeroesPage />} />
         </Route>
-        <Route path='/form-login' element={<FormLogin />} />
+        <Route path='/formik' element={<FormLogin />} />
 
         <Route path='/' element={<HomePage />} />
       </Routes>

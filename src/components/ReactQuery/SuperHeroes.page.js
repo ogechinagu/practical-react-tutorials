@@ -29,7 +29,7 @@ export const SuperHeroesPage = () => {
 
   return (
     <div className='rqoutlet'>
-      <h2>Using normal fetch method to get Super Heroes data</h2>
+      <h2>Using normal method to get Super Heroes</h2>
 
       <table>
         <thead>

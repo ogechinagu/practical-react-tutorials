@@ -1,0 +1,59 @@
+/* FORM STYLES */
+.login {
+  width: 600px;
+  margin: 30px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+
+form {
+  background: #ebebeb42;
+  padding: 30px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+
+.login input,
+.login textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.login input[type='text'],
+.login input[type='email'],
+.login input[type='password'],
+.login textarea {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type='text']:focus,
+.login input[type='email']:focus,
+.login input[type='password']:focus {
+  border-color: #888;
+}
+
+.login .form-control {
+  margin: 30px auto 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.wrapper {
+  display: flex;
+}
